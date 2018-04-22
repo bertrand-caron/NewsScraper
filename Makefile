@@ -9,3 +9,11 @@ serve:
 test: test.py
 	python3 test.py
 .PHONY: test
+
+articles_V2.json:
+	python3 testAPI.py
+.PHONY: news_articles.json
+
+news_articles_.json: articles_V2.json
+	python3 test.py
+.PHONY: news_articles_.json
